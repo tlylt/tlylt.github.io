@@ -27,6 +27,9 @@ body {
 #page-break2 {
   min-height: 10em;
 }
+#page-break3 {
+  min-height: 10em;
+}
 /*Typography
 ---------------------------------------------------*/
 body {
@@ -84,14 +87,17 @@ nav {
   background-attachment: fixed;
 }
 #page-projects {
-  min-height: 50vh;
+  padding-top: 5em;
+  min-height: 60vh;
+  background-color: black;
+  color: aliceblue;
 }
 
 /*Footer
 ---------------------------------------------------*/
 footer {
   background-color: black;
-  min-height: 50vh;
+  min-height: 30vh;
 }
 
 .socials .icon {
