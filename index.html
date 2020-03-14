@@ -25,7 +25,9 @@
 
   <body data-spy="scroll" data-target=".site-nav" data-offset="130">
     <header id="page-home" class="site-header">
-      <nav class="site-nav navbar nav-pills navbar-dark navbar-expand-md fixed-top">
+      <nav
+        class="site-nav navbar nav-pills navbar-dark navbar-expand-md fixed-top"
+      >
         <div class="container">
           <a class="navbar-brand px-5" href="#page-home">
             L
@@ -52,6 +54,9 @@
               <a class="nav-item nav-link text-white" href="#page-projects"
                 >Projects</a
               >
+              <a class="nav-item nav-link text-white" href="#page-mylife"
+                >Fun</a
+              >
               <a class="nav-item nav-link text-white" href="#page-connect"
                 >Connect</a
               >
@@ -63,6 +68,9 @@
     <article id="page-break"></article>
     <article id="page-about">
       <div class="container">
+        <p id="js-warning" class="text-danger">
+          This Site uses JavaScript. Please turn it on.
+        </p>
         <h2 class="text-right font-weight-bold pt-4">[About]</h2>
         <h1 class="font-weight-bold pb-3">Yo</h1>
         <p>
@@ -86,7 +94,9 @@
     <article id="page-break2"></article>
     <article id="page-skills">
       <div class="container">
-        <p class="d-flex justify-content-center align-items-center btn-group-sm">
+        <p
+          class="d-flex justify-content-center align-items-center btn-group-sm"
+        >
           <button
             class="btn btn-dark"
             data-toggle="collapse"
@@ -107,30 +117,35 @@
             Technologies
           </button>
         </p>
-          <div class="collapse show" id="collapse-lang">
-            <div class="card card-body">
-              <ul>
-                <li>Python</li>
-                <li>JavaScript</li>
-                <li>Ruby</li>
-                <li>Java</li>
-              </ul>
-            </div>
+        <div class="collapse show" id="collapse-lang">
+          <div class="card card-body">
+            <ul>
+              <li>Python</li>
+              <li>PHP</li>
+              <li>JavaScript</li>
+              <li>Ruby</li>
+              <li>Java</li>
+            </ul>
           </div>
-          <div class="collapse show" id="collapse-tech">
-            <div class="card card-body">
-              <ul>
-                <li>HTML</li>                
-                <li>CSS</li>
-                <li>Bootstrap</li>
-                <li>React</li>
-                <li>Django</li>
-              </ul>
-            </div>
+        </div>
+        <div class="collapse show" id="collapse-tech">
+          <div class="card card-body">
+            <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>Bootstrap</li>
+              <li>React</li>
+              <li>Django</li>
+              <li>Wordpress</li>
+              <li>mySQL</li>
+              <li>Zapier</li>
+            </ul>
           </div>
+        </div>
       </div>
     </article>
-    <article id="page-projects" >
+    <article id="page-projects">
+      <h2>Technical Projects</h2>
       <div id="projects-carousel" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
           <ol class="carousel-indicators">
@@ -146,45 +161,88 @@
           <section class="carousel-item active">
             <div class="d-flex justify-content-center py-5">
               <div>
-                  <h5 class="text-weight-bold">Sorting Visualizer</h5>
-                  <p class="text-right">Fall 2019</p>
-                  <p> - Built with Bootstrap & React to visualize Sorting algorithms</p>
-                  <p> - Implemented 9 different algorithms including Merge Sort, Insertion Sort, Heap Sort & Quick Sort</p>
-                  <a href="https://tlylt.github.io/Sorting-Visualizer/" target="_blank" class="git-link"  alt="Links to project repository on GitHub"><span class="badge badge-light">Repo</span></a>
+                <h5 class="text-weight-bold">Sorting Visualizer</h5>
+                <p class="text-right">Fall 2019</p>
+                <p>
+                  - Built with Bootstrap & React to visualize Sorting algorithms
+                </p>
+                <p>
+                  - Implemented 9 different algorithms including Merge Sort,
+                  Insertion Sort, Heap Sort & Quick Sort
+                </p>
+                <a
+                  href="https://tlylt.github.io/Sorting-Visualizer/"
+                  target="_blank"
+                  class="git-link"
+                  alt="Links to project repository on GitHub"
+                >
+                  <span class="badge badge-light">Demo</span></a
+                >
+              </div>
             </div>
-          </div>
           </section>
           <section class="carousel-item">
             <div class="d-flex py-5 justify-content-center">
               <div>
-                  <h5 class="text-weight-bold">Reservation Management</h5>
-                  <p class="text-right">Fall 2019</p>
-                  <p> - Single-Page Web Application in React for creating & managing reservation</p>
-                  <p> - Implemented user authentication & authorization, integrated with a Firebase database with custom routing</p>
-                  <a href="https://github.com/tlylt/Reservation-App" class="git-link" target="_blank" alt="Links to project repository on GitHub"><span class="badge badge-light">Repo</span></a>
+                <h5 class="text-weight-bold">Reservation Management</h5>
+                <p class="text-right">Fall 2019</p>
+                <p>
+                  - Single-Page Web Application in React for creating & managing
+                  reservation
+                </p>
+                <p>
+                  - Implemented user authentication & authorization, integrated
+                  with a Firebase database with custom routing
+                </p>
+                <a
+                  href="https://github.com/tlylt/Reservation-App"
+                  class="git-link"
+                  target="_blank"
+                  alt="Links to project repository on GitHub"
+                  ><span class="badge badge-light">Repo</span></a
+                >
               </div>
-          </div>
+            </div>
           </section>
           <section class="carousel-item">
             <div class="d-flex py-5 justify-content-center">
               <div>
-                  <h5 class="text-weight-bold">Book Listing</h5>
-                  <p class="text-right">Winter 2019</p>
-                  <p> - Built with Django to load and display a list of Books (Singapore Short Stories) from National Library Board Singapore.</p>
-                  <a href="https://github.com/tlylt/Python_Projects/tree/master/NLB_SG" class="git-link" target="_blank" alt="Links to project repository on GitHub"><span class="badge badge-light">Repo</span></a>
+                <h5 class="text-weight-bold">Book Listing</h5>
+                <p class="text-right">Winter 2019</p>
+                <p>
+                  - Built with Django to load and display a list of Books
+                  (Singapore Short Stories) from National Library Board
+                  Singapore.
+                </p>
+                <a
+                  href="https://github.com/tlylt/Python_Projects/tree/master/NLB_SG"
+                  class="git-link"
+                  target="_blank"
+                  alt="Links to project repository on GitHub"
+                  ><span class="badge badge-light">Repo</span></a
+                >
               </div>
-          </div>
+            </div>
           </section>
           <section class="carousel-item">
             <div class="d-flex py-5 justify-content-center">
               <div>
-                  <h5 class="text-weight-bold">Blog</h5>
-                  <p class="text-right">Winter 2019</p>
-                  <p> - Built with Django to create a blogging site</p>
-                  <p> - Built querysets with Django ORM and integrated with thrid-party applications</p>
-                  <a href="https://github.com/tlylt/Python_Projects/tree/master/myblog" target="_blank" class="git-link"  alt="Links to project repository on GitHub"><span class="badge badge-light">Repo</span></a>
+                <h5 class="text-weight-bold">Blog</h5>
+                <p class="text-right">Winter 2019</p>
+                <p>- Built with Django to create a blogging site</p>
+                <p>
+                  - Built querysets with Django ORM and integrated with
+                  thrid-party applications
+                </p>
+                <a
+                  href="https://github.com/tlylt/Python_Projects/tree/master/myblog"
+                  target="_blank"
+                  class="git-link"
+                  alt="Links to project repository on GitHub"
+                  ><span class="badge badge-light">Repo</span></a
+                >
               </div>
-          </div>
+            </div>
           </section>
           <a
             class="carousel-control-prev"
@@ -209,18 +267,127 @@
         </div>
       </div>
     </article>
+    <article id="page-mylife">
+      <div class="container container-fluid">
+        <ul class="card-list">
+          <li class="card">
+            <div
+              class="card-image"
+              style="background-image: url(./assets/canoeing.jpg);"
+              data-image-full="./assets/canoeing.jpg"
+            >
+              <img src="./assets/canoeing.jpg" alt="canoeing" />
+            </div>
+            <div class="card-description">
+              <h2>Kayaking</h2>
+              <p></p>
+            </div>
+          </li>
+
+          <li class="card">
+            <div
+              class="card-image"
+              style="background-image: url(./assets/climbing.jpg);"
+              data-image-full="./assets/climbing.jpg"
+            >
+              <img src="./assets/climbing.jpg" alt="climbing" />
+            </div>
+            <div class="card-description">
+              <h2>Spidermaning</h2>
+              <p></p>
+            </div>
+          </li>
+
+          <li class="card">
+            <div
+              class="card-image"
+              style="background-image: url(./assets/half_marathon.jpg);"
+              data-image-full="./assets/half_marathon.jpg"
+            >
+              <img src="./assets/half_marathon.jpg" />
+            </div>
+            <div class="card-description">
+              <h2>Running</h2>
+              <p></p>
+            </div>
+          </li>
+          <li class="card">
+            <div
+              class="card-image"
+              style="background-image: url(./assets/kidding.jpg);"
+              data-image-full="./assets/kidding.jpg"
+            >
+              <img src="./assets/kidding.jpg" alt="climbing" />
+            </div>
+            <div class="card-description">
+              <h2>Kidding</h2>
+              <p></p>
+            </div>
+          </li>
+          <li class="card">
+            <div
+              class="card-image"
+              style="background-image: url(./assets/rowing.jpg);"
+              data-image-full="./assets/rowing.jpg"
+            >
+              <img src="./assets/rowing.jpg" alt="climbing" />
+            </div>
+            <div class="card-description">
+              <h2>Dragon Boating</h2>
+              <p></p>
+            </div>
+          </li>
+          <!-- <li class="card" sample with links>
+            <a
+              class="card-image"
+              href=""
+              target="_blank"
+              style="background-image: url(./assets/kidding.jpg);"
+              data-image-full="./assets/kidding.jpg"
+            >
+              <img src="./assets/kidding.jpg" alt="climbing" />
+            </a>
+            <a class="card-description" href="" target="_blank">
+              <h2>Kidding</h2>
+              <p></p>
+            </a>
+          </li> -->
+        </ul>
+      </div>
+    </article>
     <article id="page-break3"></article>
     <footer id="page-connect" class="site-footer d-flex justify-content-center">
       <section class="socials py-3">
-        <a class="text-white px-2" href="mailto:liu_yongliang@hotmail.com"">
+        <a
+          class="text-white px-2"
+          data-toggle="tooltip"
+          data-placement="left"
+          title="Email me anthing!"
+          href="mailto:liu_yongliang@hotmail.com"
+        >
           <i class="icon fa fa-envelope"></i>
         </a>
-        <a class="text-white px-2" href="https://github.com/tlylt/" target="_blank">
+        <a
+          class="text-white px-2"
+          data-toggle="tooltip"
+          data-placement="bottom"
+          title="See my code!"
+          href="https://github.com/tlylt/"
+          target="_blank"
+        >
           <i class="icon fab fa-github"></i>
         </a>
-        <a class="text-white px-2" href="https://linkedin.com/in/-yong-/" target="_blank">
+        <a
+          class="text-white px-2"
+          data-toggle="tooltip"
+          data-placement="right"
+          title="Connect with me!"
+          href="https://linkedin.com/in/-yong-/"
+          target="_blank"
+        >
           <i class="icon fab fa-linkedin"></i>
         </a>
+        <p class="text-white">&copy; Copyright 2020, Liu Yongliang</p>
       </section>
     </footer>
 
@@ -231,6 +398,10 @@
       integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
       crossorigin="anonymous"
     ></script>
+    <script>
+      window.jQuery ||
+        document.write("<script src='js/jquery-3.4.1.slim.min.js'><\/script>");
+    </script>
     <script
       src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
       integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
